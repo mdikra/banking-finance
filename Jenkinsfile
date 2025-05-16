@@ -20,7 +20,7 @@ pipeline {
         
      stage('Deploy') {
             steps {
-                sh 'sudo docker run -itd --name My-first-container-project -p 8123:8081 danishdockerhub/staragile-project-finance:v1'
+                sh 'sudo docker run -itd --name My-first-container-project -p 8124:8081 danishdockerhub/staragile-project-finance:v1'
                   
                 }
             }
