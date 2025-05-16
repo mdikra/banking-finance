@@ -11,7 +11,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t danishdockerhub/staragile-project_finance:v1 .'
+                    sh 'docker build -t danishdockerhub/staragile-projectfinance:v1 .'
                     sh 'docker images'
                 }
             }
@@ -20,7 +20,7 @@ pipeline {
         
      stage('Deploy') {
             steps {
-                sh 'sudo docker run -itd --name My-first-container-project -p 8124:8081 danishdockerhub/staragile-project_finance:v1'
+                sh 'sudo docker run -itd --name My-first-container-banking -p 8124:8081 danishdockerhub/staragile-projectfinance:v1'
                   
                 }
             }
